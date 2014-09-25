@@ -1,0 +1,247 @@
+
+body {
+	font-family: arial;
+	background: black;
+}
+
+.image {
+    margin: auto 12.2%;
+    background-image: url('../img/pilot.jpg');
+    background-repeat: no-repeat;
+	background-position: center;
+    background-size: 1024px 760px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    border-left: 5px solid #505050;
+    border-right: 5px solid #505050;
+   	height: 42.5em;
+}
+
+/*HEADER
+========*/
+
+.title {
+	margin-bottom: 10px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+}
+
+.title h1, h2 {
+	text-align: center;
+}
+
+.title h1 {
+	margin-bottom: -10px;
+	color: #505050;
+	font-size: 30px;
+}
+
+.title h2 {
+	color: #505050;
+	font-size: 110%;
+	margin-top: 10px;
+}
+
+/*Nav
+======*/
+ .nav {
+	text-align: center;
+	margin-right: ;
+	padding: 0; /*gets rid of default padding on right and centers element*/
+}
+
+.nav li {
+	list-style: none;
+	margin: 10px 25px;
+	display: inline-block;
+}
+
+.nav li a {
+	color: white;
+	font-weight: bold;
+	font-size: 120%;
+	margin: auto 5px;
+}
+
+.nav a:hover {
+	text-decoration: none;
+}
+
+.top-box {
+	background-color: black;
+	opacity: 0.6;
+	color: #129793;
+	margin-top: -1%;
+}
+
+/*SECTION
+==========*/
+
+section {
+	display:inline-block;
+	width: 16%;
+}
+
+ .box{
+	display: inline-block;
+	margin: auto auto auto 55%;
+	color: darkred;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 95%;
+	padding-left: 10px;
+	background-color: black;
+	opacity: 0.6;
+	color: #129793;
+}
+
+
+.box p {
+	text-decoration: underline;
+	color: #129793;
+}
+
+.box ul li{
+	color: white;
+}
+
+
+.box a {
+	text-decoration: none;
+	color: white;
+}
+
+/*CONTACT
+=========*/
+
+.contact ul {
+	margin-top: 5px;
+	display: inline-block;	
+}
+
+.contact p {
+	margin-bottom: 5px;
+}
+
+.contact li {
+	list-style: none;
+}
+
+#fb {
+	list-style-image: url('../img/fb.jpg');
+}
+
+#twit {
+	list-style-image: url('../img/twit.png');
+}
+
+#email {
+	list-style-image: url('../img/em.png');
+}
+
+#phone {
+	list-style-image: url('../img/ph.png');
+}
+
+
+/* ABOUT
+=========*/
+
+.about {	
+	background-color: white;
+	opacity: 0.7;
+	color: black;
+	margin: -20% auto auto 50%;
+	padding: 10px;
+	border-radius: 5px;
+	width: 42%;
+	height: 16em;
+	border: 2px solid black;
+	opacity-border: .7;
+	border-radius: 5px;
+	padding: auto 22px;
+}
+
+.about h1 {
+	text-align: center;
+	margin-top: 10px;
+	text-decoration: underline;
+}
+
+.about p {
+	font-size: 22px;
+	text-align: center;
+}
+
+.about a {
+	color: black;
+	font-size: 20px;
+}
+
+/*CONTACT
+==========*/
+
+.about img {
+	border: darkgreen solid 1px;
+}
+
+/*MEDIA QUERY
+=============*/
+
+@media screen and (max-width: 1350px) and (min-width: 421px) {
+	body {
+		border: none;
+	}
+	.box, .box li, .box a{
+		background: none;
+		color: black;
+	}
+
+	.about {
+		background: none;
+		border: none;
+	}
+}
+
+@media screen and (max-width: 420px) { /* FOR SMARTPHONES */
+	.image {
+		background-position: center;
+		background-size:  620px 900px;
+		margin: auto;
+		background-image: url('http://lh3.ggpht.com/_rrDR01o7J18/Sq5mOyd1NyI/AAAAAAAAAjk/hfldALHMWfc/s1600/2009%2009%2013_0249.jpg');
+	}
+
+	.top-box {
+		display: none;
+	}
+
+	h2 {
+		background-color: #050505;
+		opacity: 0.6;
+	}
+	.title h2 {
+		color: white;
+	}
+	.contact {
+		border-bottom: 2px solid #050505;
+		text-align: center;
+	}
+	.skills {
+		border-bottom: 2px solid #050505;
+		text-align: center;
+	}
+	.work {
+		text-align: center;
+	}
+	.box {
+		width: 250%;
+		margin: 20px 180% auto;
+		background-color: white;
+		border: 3px solid #050505;
+		border-radius: 3%;
+		margin-top: 5px;
+		padding: 0; /*removes default padding & allows border to go all the way across */
+	}
+	  .box ul li, .box a {
+		color: #050505;
+	}
+}
